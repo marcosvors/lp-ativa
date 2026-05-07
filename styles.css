@@ -15,7 +15,7 @@
   --amber: #f7b955;
   --shadow: 0 18px 45px rgba(7, 27, 61, 0.1);
   --shadow-strong: 0 24px 70px rgba(7, 89, 255, 0.16);
-  --radius: 8px;
+  --radius: 10px;
   --container: min(1120px, calc(100% - 40px));
 }
 
@@ -96,7 +96,7 @@ select {
   left: 12px;
   z-index: 100;
   transform: translateY(-160%);
-  border-radius: 6px;
+  border-radius: 8px;
   background: var(--navy);
   color: var(--white);
   padding: 10px 14px;
@@ -168,7 +168,7 @@ html[data-theme="dark"] .site-header.is-scrolled {
   display: grid;
   place-items: center;
   border: 1px solid rgba(219, 232, 245, 0.86);
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   background: #ffffff;
   box-shadow: 0 8px 18px rgba(7, 27, 61, 0.08);
@@ -204,7 +204,7 @@ html[data-theme="dark"] .brand-mark .logo-dark {
   width: 82px;
   height: 82px;
   flex-basis: 82px;
-  border-radius: 18px;
+  border-radius: 20px;
   margin-inline: auto;
 }
 
@@ -243,7 +243,7 @@ html[data-theme="dark"] .nav-menu {
 }
 
 .nav-menu a {
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px 12px;
   color: var(--navy-soft);
   font-size: 0.95rem;
@@ -274,7 +274,7 @@ html[data-theme="dark"] .nav-menu a:focus-visible {
   display: grid;
   place-items: center;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--navy);
   background: var(--white);
   cursor: pointer;
@@ -317,7 +317,7 @@ html[data-theme="dark"] .theme-icon-moon {
   place-content: center;
   gap: 5px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--navy);
   background: var(--white);
   cursor: pointer;
@@ -841,7 +841,7 @@ html[data-theme="dark"] .flow-board {
   justify-content: flex-start;
   padding: 10px;
   border: 1px solid transparent;
-  border-radius: 7px;
+  border-radius: 9px;
   background: var(--white);
 }
 
@@ -985,7 +985,7 @@ html[data-theme="dark"] .benefit-item {
   place-items: center;
   margin-bottom: 18px;
   border: 1px solid rgba(7, 89, 255, 0.12);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--blue);
   background: linear-gradient(135deg, rgba(7, 89, 255, 0.08), rgba(25, 211, 197, 0.12));
 }
@@ -1354,7 +1354,7 @@ html[data-theme="dark"] .legal-nav {
 }
 
 .legal-nav a {
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px 12px;
   color: var(--navy-soft);
   font-weight: 800;

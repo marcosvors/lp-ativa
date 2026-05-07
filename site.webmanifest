@@ -1,0 +1,16 @@
+{
+  "name": "Ativa",
+  "short_name": "Ativa",
+  "description": "Automação de atendimento com IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0759ff",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
