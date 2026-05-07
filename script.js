@@ -1,5 +1,6 @@
 const WHATSAPP_URL =
   "https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa";
+const INSTAGRAM_URL = "https://www.instagram.com/ai.ativa/";
 
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
@@ -7,6 +8,9 @@ const navMenu = document.querySelector("[data-nav-menu]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
+const instagramLinks = document.querySelectorAll(
+  '[data-instagram], a[href*="instagram.com"]'
+);
 const revealItems = document.querySelectorAll(".reveal");
 
 const getStoredTheme = () => {
@@ -61,6 +65,12 @@ if (window.matchMedia) {
 
 whatsappLinks.forEach((link) => {
   link.setAttribute("href", WHATSAPP_URL);
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noreferrer");
+});
+
+instagramLinks.forEach((link) => {
+  link.setAttribute("href", INSTAGRAM_URL);
   link.setAttribute("target", "_blank");
   link.setAttribute("rel", "noreferrer");
 });
