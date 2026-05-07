@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ativa cria automações de atendimento com IA para responder clientes 24/7, qualificar leads e agendar reuniões com SDR automaticamente."
+    />
+    <meta name="theme-color" content="#0759ff" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Ativa | Automação de atendimento com IA</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("ativa-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Ativa - Início">
+          <span class="brand-mark" aria-hidden="true">
+            <img class="logo-light" src="assets/ativa-logo.png" alt="" />
+            <img class="logo-dark" src="assets/ativa-logo-dark.png" alt="" />
+          </span>
+          <span class="brand-text">Ativa</span>
+        </a>
+
+        <div class="nav-menu" id="primary-menu" data-nav-menu>
+          <a href="#inicio">Início</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Ativar modo escuro"
+            aria-pressed="false"
+            title="Alternar tema"
+            data-theme-toggle
+          >
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6 7.8 7.8 0 1 0 20.4 14.5Z" />
+            </svg>
+            <span class="sr-only">Alternar tema</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            data-nav-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Abrir menu</span>
+          </button>
+
+          <a
+            class="btn btn-small btn-primary nav-cta"
+            data-whatsapp
+            href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa"
+          >
+            Fale conosco
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section-pad">
+        <div class="hero-bg" aria-hidden="true">
+          <svg class="flow-lines" viewBox="0 0 720 520" fill="none">
+            <path
+              class="flow-path path-one"
+              d="M52 376 C142 250 210 306 282 184 S468 72 608 142"
+            />
+            <path
+              class="flow-path path-two"
+              d="M104 120 C196 170 214 82 318 118 S478 270 654 212"
+            />
+            <path
+              class="flow-path path-three"
+              d="M86 438 C204 392 244 480 358 392 S492 318 650 404"
+            />
+            <circle class="flow-dot dot-a" cx="52" cy="376" r="6" />
+            <circle class="flow-dot dot-b" cx="282" cy="184" r="6" />
+            <circle class="flow-dot dot-c" cx="608" cy="142" r="6" />
+            <circle class="flow-dot dot-d" cx="104" cy="120" r="6" />
+            <circle class="flow-dot dot-e" cx="318" cy="118" r="6" />
+            <circle class="flow-dot dot-f" cx="654" cy="212" r="6" />
+            <circle class="flow-dot dot-g" cx="86" cy="438" r="6" />
+            <circle class="flow-dot dot-h" cx="358" cy="392" r="6" />
+            <circle class="flow-dot dot-i" cx="650" cy="404" r="6" />
+          </svg>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Agência de automação de atendimento com IA
+            </p>
+            <h1>Atenda seus clientes 24/7 com automação inteligente.</h1>
+            <p class="hero-subtitle">
+              Criamos agentes que respondem, qualificam leads e agendam reuniões
+              automaticamente.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                data-whatsapp
+                href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa"
+              >
+                Quero automatizar meu atendimento
+              </a>
+              <a class="btn btn-secondary" href="#como-funciona">
+                Ver como funciona
+              </a>
+            </div>
+            <div class="trust-row" aria-label="Indicadores de confiança">
+              <div>
+                <strong>Atendimento 24/7</strong>
+                <span>respostas imediatas mesmo fora do horário</span>
+              </div>
+              <div>
+                <strong>SDR automático</strong>
+                <span>leads qualificados direto no calendário</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" style="--delay: 140ms">
+            <div class="automation-orbit" aria-hidden="true">
+              <span class="orbit-node node-message">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+                </svg>
+              </span>
+              <span class="orbit-node node-lead">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </span>
+              <span class="orbit-node node-check">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+            </div>
+
+            <div class="dashboard-mockup" aria-label="Mockup de dashboard comercial">
+              <div class="mockup-header">
+                <div>
+                  <span class="mockup-kicker">Agente IA conectado</span>
+                  <strong>Atendimento automatizado</strong>
+                </div>
+                <span class="status-pill">Online</span>
+              </div>
+
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <span>Atendimentos realizados</span>
+                  <strong>+1.284</strong>
+                  <small>atendimentos • +42% no mês</small>
+                </div>
+                <div class="metric-card accent">
+                  <span>Leads qualificados</span>
+                  <strong>312</strong>
+                  <small>leads qualificados • em tempo real</small>
+                </div>
+                <div class="metric-card wide">
+                  <span>Reuniões agendadas</span>
+                  <strong>89</strong>
+                  <small>reuniões agendadas • integração com calendário</small>
+                </div>
+              </div>
+
+              <div class="flow-board">
+                <div class="flow-step active">
+                  <span class="step-icon"></span>
+                  <div>
+                    <strong>Cliente enviou mensagem</strong>
+                    <small>WhatsApp</small>
+                  </div>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                  <span class="step-icon"></span>
+                  <div>
+                    <strong>IA respondeu automaticamente</strong>
+                    <small>Resposta contextual</small>
+                  </div>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                  <span class="step-icon"></span>
+                  <div>
+                    <strong>Lead qualificado</strong>
+                    <small>Interesse + perfil</small>
+                  </div>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-step">
+                  <span class="step-icon"></span>
+                  <div>
+                    <strong>Reunião agendada com SDR</strong>
+                    <small>Calendário integrado</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section-pad">
+        <div class="container two-column">
+          <div class="section-copy reveal">
+            <p class="section-label">O problema</p>
+            <h2>Empresas perdem oportunidades quando o atendimento demora.</h2>
+          </div>
+          <div class="problem-card reveal" style="--delay: 120ms">
+            <p>
+              Clientes chamam fora do horário, leads esperam por respostas e SDRs
+              recebem contatos sem contexto suficiente para avançar. Com processos
+              manuais, a equipe perde tempo em perguntas repetidas, triagens lentas
+              e agendamentos que poderiam acontecer automaticamente.
+            </p>
+            <div class="problem-list">
+              <span>Resposta demorada</span>
+              <span>Triagem manual</span>
+              <span>Agendamento lento</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions section-pad" id="solucoes">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Soluções</p>
+            <h2>Agentes de atendimento que respondem, qualificam e agendam.</h2>
+            <p>
+              A Ativa cria sistemas sob medida para atender clientes no WhatsApp,
+              entender intenção, coletar dados e entregar oportunidades prontas
+              para o time comercial.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="solution-card reveal">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 3-6.7" />
+                  <path d="M3 4v6h6" />
+                  <path d="M12 8v5l3 2" />
+                </svg>
+              </span>
+              <h3>Atendimento automatizado 24/7</h3>
+              <p>
+                Agentes que atendem clientes a qualquer hora, respondem dúvidas
+                frequentes e mantêm a conversa fluindo sem espera.
+              </p>
+            </article>
+
+            <article class="solution-card reveal" style="--delay: 70ms">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.7 8.7 0 0 1-4-.9L3 20l1.2-4.4a8.4 8.4 0 1 1 16.8-4.1Z" />
+                  <path d="M8.8 9.4c.5 2.2 2.3 4 4.5 4.8l1.4-1.4 2.4.6" />
+                </svg>
+              </span>
+              <h3>Respostas inteligentes com IA</h3>
+              <p>
+                Mensagens contextuais, claras e alinhadas ao seu processo para
+                orientar cada lead até o próximo passo.
+              </p>
+            </article>
+
+            <article class="solution-card reveal" style="--delay: 140ms">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 11 12 14 22 4" />
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+              </span>
+              <h3>Qualificação automática de leads</h3>
+              <p>
+                Perguntas inteligentes para identificar perfil, necessidade,
+                urgência e potencial antes do contato chegar ao SDR.
+              </p>
+            </article>
+
+            <article class="solution-card reveal">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4" />
+                  <path d="M8 2v4" />
+                  <path d="M3 10h18" />
+                  <path d="m9 16 2 2 4-4" />
+                </svg>
+              </span>
+              <h3>Agendamento com SDR</h3>
+              <p>
+                Integração com calendário para encontrar horários disponíveis,
+                marcar reuniões e enviar confirmações automaticamente.
+              </p>
+            </article>
+
+            <article class="solution-card reveal" style="--delay: 70ms">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11 4.9" />
+                  <path d="M14 11a5 5 0 0 0-7.1 0l-2.8 2.8a5 5 0 0 0 7.1 7.1L13 19.1" />
+                </svg>
+              </span>
+              <h3>Integração com WhatsApp e CRM</h3>
+              <p>
+                Conversas, dados do lead e histórico comercial conectados às
+                ferramentas que sua equipe já utiliza.
+              </p>
+            </article>
+
+            <article class="solution-card reveal" style="--delay: 140ms">
+              <span class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 3v18h18" />
+                  <path d="m7 15 4-4 3 3 5-7" />
+                  <path d="M18 7h1v1" />
+                </svg>
+              </span>
+              <h3>Organização do funil comercial</h3>
+              <p>
+                Leads classificados por estágio, interesse e prioridade para o
+                time focar nas oportunidades certas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section-pad" id="como-funciona">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Como funciona</p>
+            <h2>Do diagnóstico ao fluxo rodando, com clareza em cada etapa.</h2>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span>01</span>
+              <h3>Entendemos seu processo comercial</h3>
+              <p>
+                Mapeamos canais, etapas, objeções, pontos de perda e oportunidades
+                de automação.
+              </p>
+            </article>
+            <article class="process-step reveal" style="--delay: 80ms">
+              <span>02</span>
+              <h3>Criamos os fluxos de automação</h3>
+              <p>
+                Desenhamos jornadas para resposta automática, qualificação e
+                agendamento com SDR.
+              </p>
+            </article>
+            <article class="process-step reveal" style="--delay: 160ms">
+              <span>03</span>
+              <h3>Integramos ferramentas e canais</h3>
+              <p>
+                Conectamos WhatsApp, CRM, planilhas, calendário e APIs que já fazem
+                parte da operação.
+              </p>
+            </article>
+            <article class="process-step reveal" style="--delay: 240ms">
+              <span>04</span>
+              <h3>Monitoramos e otimizamos os resultados</h3>
+              <p>
+                Acompanhamos os dados para ajustar mensagens, gatilhos e etapas do
+                funil.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section-pad" id="beneficios">
+        <div class="container benefits-grid">
+          <div class="section-copy reveal">
+            <p class="section-label">Benefícios</p>
+            <h2>Atendimento imediato, leads melhores e reuniões no calendário.</h2>
+            <p>
+              As automações da Ativa ajudam sua empresa a responder no momento
+              certo, qualificar contatos com consistência e entregar reuniões mais
+              preparadas para o time comercial.
+            </p>
+          </div>
+
+          <div class="benefit-list">
+            <div class="benefit-item reveal">
+              <span class="check-dot"></span>
+              <p>Nunca deixe um cliente sem resposta</p>
+            </div>
+            <div class="benefit-item reveal" style="--delay: 60ms">
+              <span class="check-dot"></span>
+              <p>Atendimento imediato 24/7</p>
+            </div>
+            <div class="benefit-item reveal" style="--delay: 120ms">
+              <span class="check-dot"></span>
+              <p>Mais reuniões qualificadas</p>
+            </div>
+            <div class="benefit-item reveal" style="--delay: 180ms">
+              <span class="check-dot"></span>
+              <p>Redução de trabalho manual</p>
+            </div>
+            <div class="benefit-item reveal" style="--delay: 240ms">
+              <span class="check-dot"></span>
+              <p>Melhor experiência para o cliente</p>
+            </div>
+            <div class="benefit-item reveal" style="--delay: 300ms">
+              <span class="check-dot"></span>
+              <p>Aumento de conversão</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack section-pad" aria-labelledby="stack-title">
+        <div class="container stack-panel reveal">
+          <div class="stack-copy">
+            <p class="section-label">Stack e tecnologia</p>
+            <h2 id="stack-title">Tecnologias para automações seguras e escaláveis.</h2>
+            <p>
+              Trabalhamos com ferramentas modernas para criar integrações estáveis,
+              conectar dados e manter fluxos preparados para crescer junto com a
+              operação.
+            </p>
+          </div>
+
+          <div class="tech-cloud" aria-label="Tecnologias utilizadas">
+            <span>n8n</span>
+            <span>WhatsApp API</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+            <span>OpenAI</span>
+            <span>Google Calendar</span>
+            <span>Integrações via API</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-pad" id="contato">
+        <div class="container cta-panel reveal">
+          <span class="brand-mark large" aria-hidden="true">
+            <img class="logo-light" src="assets/ativa-logo.png" alt="" />
+            <img class="logo-dark" src="assets/ativa-logo-dark.png" alt="" />
+          </span>
+          <h2>Pronto para automatizar seu atendimento?</h2>
+          <p>
+            Fale com a Ativa e descubra como sua empresa pode atender melhor,
+            qualificar leads e agendar reuniões automaticamente.
+          </p>
+          <a
+            class="btn btn-primary"
+            data-whatsapp
+            href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa"
+          >
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#inicio" aria-label="Ativa - Início">
+            <span class="brand-mark" aria-hidden="true">
+              <img class="logo-light" src="assets/ativa-logo.png" alt="" />
+              <img class="logo-dark" src="assets/ativa-logo-dark.png" alt="" />
+            </span>
+            <span class="brand-text">Ativa</span>
+          </a>
+          <p>Automação de atendimento com IA</p>
+        </div>
+        <div class="footer-links">
+          <a href="#solucoes">Soluções</a>
+          <a href="#contato">Contato</a>
+          <a href="politica-de-privacidade/">Privacidade</a>
+          <a href="termos-de-servico/">Termos</a>
+          <a href="exclusao-de-dados/">Exclusão de dados</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a
+            data-whatsapp
+            href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

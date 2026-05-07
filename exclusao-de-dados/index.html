@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Instruções para solicitar exclusão de dados pessoais tratados pela Ativa em automações de atendimento com IA."
+    />
+    <meta name="theme-color" content="#0759ff" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Exclusão de Dados | Ativa</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("ativa-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="../" aria-label="Ativa - Início">
+          <span class="brand-mark" aria-hidden="true">
+            <img class="logo-light" src="../assets/ativa-logo.png" alt="" />
+            <img class="logo-dark" src="../assets/ativa-logo-dark.png" alt="" />
+          </span>
+          <span class="brand-text">Ativa</span>
+        </a>
+
+        <div class="nav-menu" id="primary-menu" data-nav-menu>
+          <a href="../#inicio">Início</a>
+          <a href="../#solucoes">Soluções</a>
+          <a href="../#como-funciona">Como funciona</a>
+          <a href="../#beneficios">Benefícios</a>
+          <a href="../#contato">Contato</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false" title="Alternar tema" data-theme-toggle>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6 7.8 7.8 0 1 0 20.4 14.5Z" />
+            </svg>
+            <span class="sr-only">Alternar tema</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Abrir menu</span>
+          </button>
+
+          <a class="btn btn-small btn-primary nav-cta" data-whatsapp href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa">Fale conosco</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="legal-hero section-pad">
+        <div class="container legal-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Solicitações de privacidade
+            </p>
+            <h1>Exclusão de Dados</h1>
+            <p class="hero-subtitle">
+              Use esta página para entender como solicitar a exclusão de dados
+              pessoais tratados pela Ativa em automações, conversas e integrações.
+            </p>
+          </div>
+          <aside class="legal-summary reveal" style="--delay: 120ms">
+            <strong>Resposta em até 15 dias</strong>
+            <span>Solicitações analisadas conforme a LGPD</span>
+            <small>Última atualização: maio de 2026</small>
+          </aside>
+        </div>
+      </section>
+
+      <section class="legal-section section-pad">
+        <div class="container legal-layout">
+          <aside class="legal-nav reveal" aria-label="Índice de exclusão">
+            <a href="#como-solicitar">Como solicitar</a>
+            <a href="#informacoes">Informações necessárias</a>
+            <a href="#prazos">Prazos</a>
+            <a href="#limitacoes">Limitações</a>
+            <a href="#contato">Contato</a>
+          </aside>
+
+          <article class="legal-card reveal" style="--delay: 100ms">
+            <h2 id="como-solicitar">1. Como solicitar exclusão</h2>
+            <p>
+              Para solicitar a exclusão de dados pessoais tratados pela Ativa, envie
+              um e-mail para
+              <a href="mailto:contato@ativa.business">contato@ativa.business</a>
+              com o assunto "Exclusão de dados pessoais".
+            </p>
+            <p>
+              Se você interagiu com uma automação via WhatsApp, formulário, campanha,
+              integração com Meta ou outro canal conectado à Ativa, informe o canal
+              utilizado para que possamos localizar os registros corretos.
+            </p>
+
+            <h2 id="informacoes">2. Informações necessárias</h2>
+            <p>
+              Para proteger sua privacidade, podemos solicitar dados mínimos para
+              confirmar sua identidade e encontrar os registros, como nome, telefone
+              com DDD e código do país, e-mail, empresa relacionada, canal de contato
+              e data aproximada da interação.
+            </p>
+
+            <h2 id="prazos">3. Prazos de atendimento</h2>
+            <p>
+              A Ativa analisará a solicitação e responderá em prazo compatível com a
+              legislação aplicável, em geral em até 15 dias a partir do recebimento das
+              informações necessárias para validação.
+            </p>
+
+            <h2 id="limitacoes">4. Quando alguns dados podem ser mantidos</h2>
+            <p>
+              Alguns dados podem ser preservados quando houver obrigação legal,
+              necessidade de cumprimento de contrato, prevenção a fraude, segurança,
+              exercício regular de direitos ou outra base legal permitida pela LGPD.
+              Nesses casos, limitaremos o tratamento às finalidades necessárias.
+            </p>
+
+            <h2>5. Dados em plataformas de terceiros</h2>
+            <p>
+              Quando a interação envolver serviços de terceiros, como WhatsApp, Meta,
+              calendários, CRM ou provedores de hospedagem, a exclusão em sistemas da
+              Ativa não substitui solicitações que você queira fazer diretamente a
+              esses provedores, de acordo com as políticas deles.
+            </p>
+
+            <h2 id="contato">6. Canal oficial</h2>
+            <p>
+              O canal oficial para solicitações de exclusão e demais pedidos de
+              privacidade é
+              <a href="mailto:contato@ativa.business">contato@ativa.business</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../" aria-label="Ativa - Início">
+            <span class="brand-mark" aria-hidden="true">
+              <img class="logo-light" src="../assets/ativa-logo.png" alt="" />
+              <img class="logo-dark" src="../assets/ativa-logo-dark.png" alt="" />
+            </span>
+            <span class="brand-text">Ativa</span>
+          </a>
+          <p>Automação de atendimento com IA</p>
+        </div>
+        <div class="footer-links">
+          <a href="../#solucoes">Soluções</a>
+          <a href="../politica-de-privacidade/">Privacidade</a>
+          <a href="../termos-de-servico/">Termos</a>
+          <a href="./">Exclusão de dados</a>
+          <a data-whatsapp href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1,%20quero%20automatizar%20minha%20empresa">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
